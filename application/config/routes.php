@@ -1,4 +1,3 @@
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -52,8 +51,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'kategori';
 $route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+
+
 $route['penjualan'] = 'penjualan/store';
 $route['hapus_cart/(:any)'] = 'penjualan/hapus_cart/$1';
 $route['ubah_qty'] = 'penjualan/ubah_qty';
 $route['cancel'] = 'penjualan/cancel';
-$route['translate_uri_dashes'] = FALSE;

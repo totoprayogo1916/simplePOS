@@ -3,12 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Fungsi
 {
-	protected $_ci;
+	private $_ci;
 
 	function __construct()
 	{
-		$this->_ci = &get_instance();
-		$this->_ci->load->model('Model_Barang');
+		$this->_ci =& get_instance();
+// 		$this->_ci->load->model('Model_barang');
 	}
 
 	function template($content, $data = null)

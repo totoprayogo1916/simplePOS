@@ -1,13 +1,12 @@
 <?php
 class Auth extends CI_controller
 {
-
 	function __construct()
 	{
 		parent::__construct();
 		$this->load->model('Model_operator');
 	}
-	
+
 	function login()
 	{
 		if (isset($_POST['submit'])) {
@@ -38,6 +37,6 @@ class Auth extends CI_controller
 	function logout()
 	{
 		$this->session->sess_destroy();
-		redirect('Auth/login');
+		redirect('auth/login');
 	}
 }

@@ -201,7 +201,7 @@ class Penjualan extends CI_Controller
             'no_rek' => $this->input->post('norek'),
             'atas_nama' => $this->input->post('atas_nama'),
             'id_bank' => $this->input->post('payments'),
-            'operator' => $this->session->userdata['username'],
+            'operator' => $this->session->userdata('username'),
         );
         $detail_penjualan =  $this->Model_penjualan->tambah_trf($payment);
         $id_dtlpenjualan = $this->Model_penjualan->get_id($kodeurut);

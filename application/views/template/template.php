@@ -60,18 +60,18 @@
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav">
 						<!-- User Account: style can be found in dropdown.less -->
-						<?php $foto = $this->session->userdata['foto']; ?>
+						<?php $foto = $this->session->userdata('foto'); ?>
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<img src="<?php echo base_url('uploads/operator/') . $foto; ?>" class="user-image" alt="User Image">
-								<span class="hidden-xs"><?php echo $this->session->userdata['username']; ?></span>
+								<span class="hidden-xs"><?php echo $this->session->userdata('username'); ?></span>
 							</a>
 							<ul class="dropdown-menu">
 								<!-- User image -->
 								<li class="user-header">
 									<img src="<?php echo base_url('uploads/operator/') . $foto; ?>" class="img-circle" alt="User Image">
 									<p>
-										<?php echo $this->session->userdata['username']; ?>
+										<?php echo $this->session->userdata('username'); ?>
 										<small>Member since Oct. 2013</small>
 									</p>
 								</li>
@@ -94,11 +94,11 @@
 				<!-- Sidebar user panel -->
 				<div class="user-panel">
 					<div class="pull-left image">
-						<?php $foto = $this->session->userdata['foto']; ?>
+						<?php $foto = $this->session->userdata('foto'); ?>
 						<img src="<?php echo base_url('uploads/operator/') . $foto; ?>" class="img-circle" alt="User Image">
 					</div>
 					<div class="pull-left info">
-						<p> <?php echo $this->session->userdata['username']; ?> </p>
+						<p> <?php echo $this->session->userdata('username'); ?> </p>
 						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
 					</div>
 				</div>
