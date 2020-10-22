@@ -1,0 +1,13 @@
+assets/
+database/
+system/
+uploads/
+_application/
+
+.editorconfig
+.htaccess
+composer.json
+contributing.md
+index.php
+license.txt
+readme.rst
